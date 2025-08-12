@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.E.E.P.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #fff0d9;
+            
+        }
+        header, footer {
+            text-align: center;
+            background: #719b4e;
+            color: white;
+            padding: 10px 0;
+            transition: background-color 0.5s;
+        }
+        main p,
+        main li,
+        main ol {
+            color: #000000;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        main {
+            background: #f2fce9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h1, h2 {
+            color: #4e899b
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        } 
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        h3 {
+            color: #4a8d4a;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #719b4e;
+            color: white;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .header-text {
+            flex: 1 1 100%;
+            margin-bottom: 10px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+        }
+
+        .header-text p {
+            margin: 0;
+        }
+
+        .header-img {
+            flex: 0 0 auto;
+        }
+
+        .header-img img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        @media (min-width: 600px) {
+            .header-container {
+                flex-wrap: nowrap;
+                text-align: left;
+            }
+
+            .header-text {
+                flex: 1;
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+
+        /* Estilo para el modo oscuro */
+        body.dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        body.dark-mode header, 
+        body.dark-mode footer {
+            background-color: #444;
+        }
+
+        body.dark-mode main {
+            background-color: #555;
+        }
+
+        body.dark-mode a {
+            color: #fff;
+        }
+
+        /* Estilo del foco */
+        .header-container .foco {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .header-container .foco:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Mini barra EcoDiálogos -->
+            <div style="flex-shrink: 0; text-align: center; margin-right: 20px;">
+                <a href="EcoDialogos.html" style="text-decoration: none; color: white;">
+                    <img src="EcoDialogosLogo.jfif" alt="Logo EcoDiálogos" style="width: 70px; height: 70px; border-radius: 50%; border: 2px solid white; object-fit: cover;">
+                    <div style="font-size: 14px; margin-top: 5px;">EcoDiálogos</div>
+                </a>
+            </div>
+
+            <!-- Título principal A.E.E.P -->
+            <div class="header-text">
+                <h1 style="margin: 0; color: white;">A.E.E.P</h1>
+                <p style="margin: 0; color: white;">Asociación De Estudiantes Ecologistas Programadores</p>
+            </div>
+
+            <div style="flex-shrink: 0; display: flex; align-items: center;">
+                <img id="foco" src="foco-off.png" alt="Modo Oscuro" style="width: 50px; height: 50px; cursor: pointer; margin-right: 15px;" onclick="toggleDarkMode()">
+                <img src="logo-aeep.jfif" alt="Logo AEEP" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid white;">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>¡ Bienvenidos a la A.E.E.P !</h2>
+            <p>En la Asociación Ecológica y Educativa de Programadores (A.E.E.P.), trabajamos para conectar la tecnología con la sostenibilidad. Nuestra misión es educar y sensibilizar a los jóvenes programadores sobre los retos ambientales actuales y cómo, a través de soluciones tecnológicas, podemos contribuir a un futuro más verde.</p>
+            <p>Creemos que cada línea de código tiene el poder de generar un impacto positivo en el medio ambiente. Únete a nosotros para crear un mundo más sostenible con innovación, trabajo en equipo y compromiso ecológico.</p>
+        </section>
+    
+        <section>
+            <h2>¿Por qué estamos aquí?</h2>
+            <p>Bienvenidos a la Asociación de Estudiantes Ecologicos y Programadores (A.E.E.P.), una organización comprometida con la creación de un futuro más verde y sostenible. Nuestra misión es concienciar sobre la importancia de la sostenibilidad mediante la integración de la tecnología y el trabajo en equipo. Esto lo hacemos a traves de nuestro proyecto y con momentos cortos que brindan información sobre la interesante forma de relacionar el medio ambiente y la tecnologia.</p>
+            <p>A través de nuestro proyecto innovador, eventos educativos y colaboraciones con algunas materias, buscamos lograr un interes a las nuevas generaciones para que puedan ayudar al proyecto, continuarlo y mejorarlo. Buscamos tambien que haya una importancia en resolver temas como lo son la contaminación, el cambio climático y la pérdida de biodiversidad, con soluciones tecnológicas eficaces y escalables.</p>
+            <p>Nuestra visión es ser una comunidad educativa de estudiantes que utilicen sus habilidades en programación y desarrollo tecnológico para de esta forma impulsar cambios positivos en el medio ambiente, generando impacto tanto a nivel individual como local.</p>
+        </section>
+        <section>
+            <h2>¿Cómo se va a hacer el proyecto?</h2>
+            <p>En la A.E.E.P. creemos en que de la energia renovable se puede conseguir un aprendizaje constante. Por eso, nuestro enfoque combina investigación, tecnología y la naturaleza para hallar soluciones para cuidar el entorno ambiental.</p>
+            <p>Nuestros pasos son:</p>
+            <p><h3>Investigación y análisis:</h3> Estudiamos acerca de como la tecnología junto con la naturaleza nos ofrece unos sustitutos a la energía eléctrica, gracias a esto encontramos la energía eólica y sus métodos de aplicación en la institución.</p>
+            <p>Desarrollo tecnológico: Creamos herramientas digitales como paginas web, redes sociales y una pagina de opiniones que ayuda a la comunidad a tomar decisiones más sostenibles tomando en cuenta sus opiniones.</p>
+            <p>Trabajo en equipo: Utilizamos herramientas como Google forms, comunicación activa y pensamiento critico para que cada miembro del equipo pueda aportar desde su experiencia y desde sus conocimientos aportes con relevancia para el proyecto.</p>
+            <p>Sostenibilidad desde el desarrollo: Aplicamos prácticas responsables como el uso de servidores verdes, optimización del código y reutilización de recursos digitales, clases de cuidado de los aerogeneradores para concientizar a futuras generaciones.</p>
+        </section>
+        <section>
+            <h2>Nuestros Objetivos</h2>
+            <h3>OBJETIVO GENERAL</h3>
+             <p>Desarrollar un sistema de energía eólica en nuestra institución educativa para optimizar el uso de los recursos energéticos, reducir la dependencia de los transformadores y promover el uso de fuentes de energía renovables, contribuyendo a la sostenibilidad y concienciación ambienta</p>
+            </p>
+            <h3>OBJETIVOS ESPECIFICOS</h3>
+            <ol style="color: #000000; font-size: 18px; line-height: 1.6;">
+                <li>
+                    Diseñar y construir un prototipo de aerogenerador que aproveche la energía eólica disponible en la institución para generar electricidad de manera eficiente y sostenible.
+                </li>
+                <li>
+                    Analizar la viabilidad técnica y económica de integrar un sistema de energía eólica con los transformadores existentes en la institución, evaluando su capacidad para satisfacer las necesidades energéticas.
+                </li>
+                <li>
+                    Sensibilizar a la comunidad educativa sobre los beneficios de las energías renovables, especialmente la energía eólica, a través de presentaciones, talleres y actividades de divulgación a los chicos de 10 que heredarán este proyecto.
+                </li>
+                <li>
+                    Entrenar al personal encargado del mantenimiento de los sistemas eólicos, proporcionando los conocimientos necesarios para garantizar el correcto funcionamiento y la longevidad de los aerogeneradores.
+                </li>
+            </ol>
+        <section>
+            <h2>Nuestros Proyectos</h2>
+            <p>Aquí presentaremos algunos de los proyectos en los que estamos trabajando o planeamos desarrollar próximamente:
+
+                <h3>AeroBit</h3>
+                <p>AeroBit es un proyecto impulsado por la A.E.E.P. que fusiona innovación tecnológica con conciencia ambiental. Consiste en pequeños aerogeneradores desarrollados por estudiantes, diseñados para activarse durante momentos estratégicos del año y alimentar dispositivos como ventiladores o luminarias, reduciendo así el uso de energía eléctrica convencional.</p>
+                <p>Más que una herramienta, EcoRotor es una experiencia educativa: una forma de aprender sobre energías renovables, electrónica y sostenibilidad mientras se aporta al cuidado del planeta. Cada rotor que gira representa una pequeña revolución verde generada por jóvenes programadores comprometidos con el cambio.</p>
+                <p>A continuación observaran unas fotos frontales y de lado de uno de nuestros primeros prototipos para estudiar el como funciona la energia renovable en este caso es un molino que cuando recibe una carga de viento que mueve las aspas y enciende un foquito</p>
+              
+              <div style="display: flex; justify-content: space-between; align-items: center; text-align: center;">
+  <div>
+    <img src="frontal.jfif" alt="ponlo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid white;">
+    <p style="font-weight: bold; color: black;">foto frontal</p>
+  </div>
+  <div>
+    <img src="delado.jfif" alt="ponlo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid white;">
+    <p style="font-weight: bold; color: black;">foto de lado</p>
+  </div>
+</div>
+
+
+            
+
+
+                
+                
+                <h3>EcoDiálogos A.E.E.P:</h3>
+               <p> EcoDiálogos es un muro digital en el que tú, como estudiante, programador o entusiasta del medio ambiente, podés compartir tus ideas, expectativas, ayuda, experiencias y opiniones sobre cómo la tecnología puede construir un futuro más verde.</p>
+
+                <p>Este espacio fue creado por la A.E.E.P. para escuchar todas las voces, sembrar nuevas perspectivas y nutrir nuestro proyecto con lo más valioso: tu visión.</p>
+                
+                <p>Cada aporte es una línea de código que suma al cambio, una idea que puede florecer y una oportunidad para crecer como comunidad comprometida con la sostenibilidad y la innovación.</p>
+
+                <p>Cada proyecto es una oportunidad para involucrarte y dejar huella.</p>
+                </p>
+        </section>
+        <section>
+            <h2>Únete a Nosotros</h2>
+            <p>¿Quieres ser parte del cambio?</p>
+            <p>¡Hola! Si te gustaría involucrarte más activamente con la A.E.E.P. y participar directamente en nuestros proyectos, puedes comunicarte con nosotros a traves de EcoDialogos. Estamos buscando estudiantes comprometidos, con interés en energías renovables y tecnología, que quieran aportar no solo en el presente, sino también ayudar a que esta iniciativa continúe creciendo en los próximos años. 🌱💻</p>
+            <p>Además, estamos comenzando a trabajar junto a los profesores de Biología para dar a conocer el proyecto AeroBit en toda la institución. Queremos organizar charlas educativas sobre energías limpias, y quienes se unan podrán colaborar en estas actividades como parte del equipo.
+                No hay una recompensa económica por participar, pero sí el valor de aportar por amor al tema, al planeta y a la comunidad educativa. Si te interesa y quieres formar parte del cambio, ¡te estamos esperando!</p>
+        </section>
+        <section>
+            <h2>Eventos</h2>
+            <p>A lo largo del año, organizaremos y participaremos en diversas actividades que promueven la programación ecológica y la conciencia ambiental.</p>
+            <p>Por lo que como el proyecto recién esta iniciando hasta ahora no estaran programadas actividades u eventos... </p>
+        </section>
+        </section>
+             <h2>Noticias</h2>
+             <p>Nuestro blog es el espacio para compartir avances, ideas y novedades:
+
+               <h3> Innovaciones ecológicas en tecnología.</h3>
+               <p>¿Quieres conocer un poco mas acerca de que cosas nacen cuando la tecnologia y la naturaleza se unen?</p> |
+               <a href="https://www.youtube.com/watch?v=Qy3Io12oncI&ab_channel=DWEspa%C3%B1ol" target="_blank">Youtube</a> |
+               <p>la universidad carlemany recopilo 5 innovaciones tecnológicas aplicadas al medio ambiente ¿Quieres saber cuales son?</p> |
+               <a href="https://www.universitatcarlemany.com/actualidad/blog/5-innovaciones-tecnologicas-aplicadas-al-medio-ambiente/" target="_blank">Google</a>|
+                
+                <h3>Tips sobre cómo llevar una vida más ecológica usando herramientas digitales.</h3>
+                <p>un creador de habla inglesa en menos de 11 minutos nos dice como usar la tecnologia para crear un futuro sotenible ¿No lo crees? Miralo tu mismo.</p> |
+                <a href="https://www.youtube.com/watch?v=sAuTaAjb9iM&ab_channel=TechTalkCentral" target="_blank">Youtube</a> |
+                <p>Infobae recopilo siete consejos tecnológicos para cuidar el medio ambiente, 7 pequeñas acciones que podemos usar en el dia a dia y generaran un cambio a largo plazo ¡Increible!</p> |
+                <a href="https://www.infobae.com/tecno/2023/10/21/siete-consejos-tecnologicos-para-cuidar-el-medio-ambiente/" target="_blank">Google</a> |
+                
+        </section>
+        </section>
+        <h2>Juntos por un Futuro Sostenible</h2>
+        <p>En la A.E.E.P. sabemos que el cambio empieza con una idea, una línea de código, una decisión.
+            Si compartes nuestra visión, ¡súmate! Juntos podemos programar un futuro donde la tecnología y el respeto por la naturaleza vayan de la mano.</p>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 A.E.E.P</p>
+        <p>Síguenos en nuestras redes sociales: 
+            <a href="https://www.instagram.com/ecoprogestudiantes/" target="_blank">Instagram</a> | 
+            <a href="http://tiktok.com/@brisa_dorada" target="_blank">Tiktok</a>
+        </p>
+        <p>Este proyecto está meramente enfocado al estudio y al desarrollo tecnológico...</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const foco = document.getElementById('foco');
+            if(document.body.classList.contains('dark-mode')) {
+                foco.src = 'foco-off.png';
+            } else {
+                foco.src = 'foco-on.png';
+            }
+        }
+    </script>
+</body>
+</html>
