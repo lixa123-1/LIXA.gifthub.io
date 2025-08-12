@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoDiálogos - A.E.E.P.</title>
+    <style>
+        body {
+            background-color: #fff0d9;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        header {
+            background-color: #719b4e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.5s;
+        }
+
+        h2 {
+            color: #4e899b;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        h5 {
+            color: #000000;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .comentarios {
+            background-color: #eaf4e3;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .ecocuadro {
+            background-color: #f2fce9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+
+        .dark-mode header {
+            background-color: #3b5939;
+        }
+
+        .dark-mode .comentarios {
+            background-color: #3a3a3a;
+        }
+
+        .dark-mode .ecocuadro {
+            background-color: #404040;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+            <div style="flex-shrink: 0; text-align: center; margin-right: 20px;">
+                <a href="pag.html" style="text-decoration: none; color: white;">
+                    <img src="reversa.jfif" alt="A.E.E.P" style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid white; object-fit: cover;">
+                    <div style="font-size: 14px;">A.E.E.P</div>
+                </a>
+            </div>
+
+            <div style="flex-grow: 1; text-align: center;">
+                <h1>EcoDiálogos</h1>
+                <p>Tu voz, tus ideas, nuestro futuro verde.</p>
+            </div>
+
+            <div style="flex-shrink: 0; display: flex; align-items: center;">
+                <img id="foco" src="foco-off.png" alt="Modo Oscuro" style="width: 50px; height: 50px; cursor: pointer; margin-right: 15px;" onclick="toggleDarkMode()">
+                <img src="logo-aeep.jfif" alt="Logo AEEP" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid white;">
+                
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="ecocuadro">
+            <h2>¿Qué es EcoDiálogos?</h2>
+            <p>EcoDiálogos es un espacio abierto para el diálogo, la reflexión y la construcción colectiva de ideas entre estudiantes, docentes y cualquier persona interesada en la conexión entre la tecnología y el medio ambiente.</p>
+            <p>Este muro digital surge como una herramienta participativa de la Asociación de Estudiantes Ecologistas Programadores (A.E.E.P.), con el objetivo de visibilizar las voces que muchas veces quedan en el aire: las ideas espontáneas, las sugerencias valiosas, las inquietudes honestas y las propuestas que nacen del interés por un mundo más justo, verde y tecnológico.</p>
+            <p>Aquí podés compartir tus expectativas sobre los proyectos en marcha, tus experiencias en actividades ecológicas o educativas, tus opiniones sobre el uso de la tecnología para reducir el impacto ambiental, y hasta tu disposición a colaborar o aprender más del tema.</p>
+            <p>Creemos que cada comentario puede encender una chispa, abrir una nueva línea de acción o mejorar lo que ya venimos construyendo. No es necesario ser experto para opinar ni tener un proyecto en marcha para ser parte. Lo importante es querer sumar.</p>
+            <p>Porque cuando compartimos lo que pensamos, creamos puentes. Y cuando esos puentes se construyen con compromiso, creatividad y conciencia ambiental, estamos más cerca de lograr un verdadero impacto.</p>
+            <h5>Tu palabra cuenta. Tu idea importa. Tu participación transforma.</h5>
+        </div>
+    </section>
+
+    <section>
+        <div class="ecocuadro">
+            <h2>Participa llenando el primer formulario</h2>
+            <p>El formulario que encontraras a continuación es para saber tus opiniones, ideas o experiencias acerca de la tecnología y la ecología. ¡Participa sin miedo!</p>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5_PO6wYF6vZZALTFK2u5XloFYth_9Dzcn9QhD3KoXWdbSew/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </section>
+
+    <section>
+        <div class="ecocuadro">
+            <h2>Participa llenando el segundo formulario</h2>
+            <p>El formulario que encontraras a continuación es solo si estas interesado en hacer parte del proyecto de una manera mas activa y mas alla de las ideas y opiniones (ninguna informacion saldra de aqui). ¡Participa sin miedo!</p>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyfCWEl43HzcJYVcEjB1mVDepOtTaW7_bRK0wtUMBE0bb29w/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </section>
+
+    <section class="comentarios">
+        <h2>Nuestros comentarios aun no estan sugestionados. Mas sin embargo queremos abrir la sección con un comentario de la lider del grupo</h2>
+        <p>"El viento ya está soplando y nosotros somos quienes decidimos hacia dónde va. "Este proyecto no es solo sobre energía eólica, es sobre energía juvenil. Ideas que inspiran, voces que transforman, y un cambio que comienza contigo.Deja tu huella. Participa. Comparte. Únete.</p>
+        <p>– Isabela Córdoba, líder del proyecto </p>
+    </section>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const foco = document.getElementById('foco');
+            if(document.body.classList.contains('dark-mode')) {
+                foco.src = 'foco-off.png';
+            } else {
+                foco.src = 'foco-on.png';
+            }
+        }
+    </script>
+</body>
+</html>
